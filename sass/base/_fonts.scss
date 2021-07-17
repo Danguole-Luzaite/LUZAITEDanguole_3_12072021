@@ -1,3 +1,11 @@
 /* Polices:
 Logo et titres: Shrikhand
 Texte: Roboto */
+
+.welcome_page, .welcome_page-title, footer, main {
+    font-family: $font-text;
+}
+
+.footer-title, h1 {
+    font-family: $font-titles;
+}
