@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../sass/main.css">
+        <link rel="stylesheet" href="./css/main.css">
         <script src="https://kit.fontawesome.com/dd84544794.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,86 +12,92 @@
         <title>ohmyfood_accueil</title>
     </head>
     <body class="body-welcome">
-        <div class="animation_loading-spinner"> <!--un aperçu, 1-3 sec, couvrir l'intégralité de l'écran, -->
+        <div class="animation_loading-spinner"></div> <!--un aperçu, 1-3 sec, couvrir l'intégralité de l'écran, -->
             <header class="header-welcome">
-                <a href="index.html"><img src="logo/ohmyfood@2x.svg" alt="logo_oh_my_food" class="header-welcome__logo"></a>
+                <a href="index.html" class="header-welcome__logo"><img src="logo/ohmyfood@2x.svg" alt="logo_oh_my_food" class="logo__img"></a>
             </header>
 
             <main class="welcome_page">
-                <div class="location"> 
-                    <span><i class="fas fa-map-marker-alt"></i></span>
+                <div class="location">
+                    <span class="marker-icon"><i class="fas fa-map-marker-alt"></i></span>
                     <span class="location__name">Paris, Belleville</span>
                 </div>
 
                 <section class="presentation"> <!-- flex -->
                     <h1 class="welcome_page-title">Réservez le menu qui vous convient</h1>
                     <p class="presentation__desc">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                    <a href="#restaurants" class="btn btn--gradient">
+                    <button class="presentation__btn">
                         Explorer nos restaurants
-                    </a>
+                    </button>
                 </section>
                 <!-- Fonctionnement -->
-                <section class="section-function">
-                    <h1 class="welcome_page-title">Fonctionnement</h1>
+                <section class="function">
+                    <h2 class="welcome_page-title">Fonctionnement</h2>
                     <div class="container-function">  <!-- flex -->
-                        <div class="container-function__btn container-function__btn--backgr-color">
+                        <div class="container-function__btn">
                             <p class="nr">1</p>
-                            <i class="fas fa-mobile-alt"></i>
-                            <span><strong>Choisissez un restaurant</strong></span>
+                            <i class="fas btn__fas fa-mobile-alt"></i>
+                            <span class="btn-dscr"><strong>Choisissez un restaurant</strong></span>
                         </div>
-                        <div class="container-function__btn container-function__btn--backgr-color">
+                        <div class="container-function__btn">
                             <p class="nr">2</p>
-                            <i class="fas fa-list-ul"></i>
-                            <span><strong>Composez votre menu</strong></span>
+                            <i class="fas btn__fas fa-list-ul"></i>
+                            <span class="btn-dscr"><strong>Composez votre menu</strong></span>
                         </div>
-                        <div class="container-function__btn container-function__btn--backgr-color">
+                        <div class="container-function__btn">
                             <p class="nr">3</p>
-                            <i class="fas fa-store"></i>
-                            <span><strong>Dégustez au restaurant</strong></span>
+                            <i class="fas  btn__fas btn__fas--purple fa-store"></i>
+                            <span class="btn-dscr"><strong>Dégustez au restaurant</strong></span>
                         </div>
                     </div>
                 </section>
                 <!-- restaurants -->
-                <section id="restaurants">
-                    <h1 class="welcome_page-title">Restaurants</h1>
+                <section class="restaurants">
+                    <h2 class="welcome_page-title">Restaurants</h2>
                     <div class="container-rest"> <!-- flex -->
-                        <a href="menu-01-la-palette-du-gout.html" class="rest-card">
-                            <img class="rest-card__img" src="images/small/1_jay_wennington_n.jpg" alt="restaurant la-palette-du-gout"/>
+                        <a href="./Views/menu-01-la-palette-du-gout.html" class="rest-card">
+                            <div class="rest-card__imgbox">
+                                <img class="rest-card__img rest-card__img--new" src="./images/small/1_jay_wennington_n.jpg" alt="restaurant la-palette-du-gout"/>
                                 <p class="rest-card__new">Nouveau</p>
+                            </div>
+                                
                             <div class="rest-card__decr"> <!-- flex -->
                                 <h2 class="rest-card__title">La palette du goût</h2>
-                                <p>Ménilmontant</p>
+                                <p class="decr-loc">Ménilmontant</p>
                                 <span class="btn-like">
                                     <i class="far fa-heart"></i>
                                 </span>
                             </div>
                         </a>
-                        <a href="menu-02-la-note-enchantee.html" class="rest-card">
-                            <img class="rest-card__img" src="images/small/2_stil.jpg" alt="restaurant a-note-enchantee"/>
+                        <a href="./Views/menu-02-la-note-enchantee.html" class="rest-card">
+                            <div class="rest-card__imgbox">
+                                <img class="rest-card__img rest-card__img--new" src="./images/small/2_stil-croped.jpg" alt="restaurant a-note-enchantee"/>
                                 <p class="rest-card__new">Nouveau</p>
+                            </div>
+
                             <div class="rest-card__decr"> <!-- flex -->
                                 <h2 class="rest-card__title">La note enchantée</h2>
-                                <p>Charrone</p>
+                                <p class="decr-loc">Charrone</p>
                                 <span class="btn-like">
                                     <i class="far fa-heart"></i>
                                 </span>
                             </div>
                         </a>
-                        <a href="menu-03-a-la-francaise.html" class="rest-card">
-                            <img class="rest-card__img" src="images/small/3_toa_heftiba.jpg" alt="restaurant a-la-francaise"/>
+                        <a href="./Views/menu-03-a-la-francaise.html" class="rest-card">
+                            <img class="rest-card__img" src="./images/small/3_toa_heftiba.jpg" alt="restaurant a-la-francaise"/>
                             <div class="rest-card__decr"> <!-- flex -->
                                 <h2 class="rest-card__title">À la française</h2>
-                                <p>Cité rouge</p>
+                                <p class="decr-loc">Cité rouge</p>
                                 <span class="btn-like">
                                     <i class="far fa-heart"></i>
                                 </span>
                             </div>
                         </a>
-                        <a href="menu-04-le-delice-des-sens.html" class="rest-card">
-                            <img class="rest-card__img" src="images/small/4_louis_hansel_shotsoflouis.jpg" alt="restaurant le-delice-des-sens"/>
+                        <a href="./Views/menu-04-le-delice-des-sens.html" class="rest-card">
+                            <img class="rest-card__img" src="./images/small/4_louis_hansel_shotsoflouis.jpg" alt="restaurant le-delice-des-sens"/>
                             <div class="rest-card__decr"> <!-- flex -->
                                 <h2 class="rest-card__title">Le délice des sens</h2>
-                                <p>Folie-Méricourt</p>
+                                <p class="decr-loc">Folie-Méricourt</p>
                                 <span class="btn-like">
                                     <i class="far fa-heart"></i>
                                 </span>
@@ -106,25 +112,25 @@
                 <p class="footer-title">ohmyfood</p>
                 <ul class="nav">
                     <li class="nav__link">
-                        <a href="#">
-                            <span><i class="fas fa-utensils"></i></span>
+                        <a href="#" class="nav__link--style">
+                            <span><i class="fas nav-fas fa-utensils"></i></span>
                             <strong>Proposer un restaurant</strong>
                         </a>
                     </li>
                     <li class="nav__link">
-                        <a href="#">
-                            <span><i class="fas fa-hands-helping"></i></span>
+                        <a href="#" class="nav__link--style">
+                            <span><i class="fas nav-fas fa-hands-helping"></i></span>
                             <strong>Devenir partenaire</strong>
                         </a>
                     </li>
                     <li class="nav__link">
-                        <a href="#">Mentions légales</a>
+                        <a href="#" class="nav__link--style">Mentions légales</a>
                     </li>
                     <li class="nav__link">
-                        <a href="mailto:ohmyfood@example.com">Contact</a>
+                        <a href="mailto:ohmyfood@example.com" class="nav__link--style">Contact</a>
                     </li>
                 </ul>
             </footer>
-        </div>        
+                
     </body>
 </html>

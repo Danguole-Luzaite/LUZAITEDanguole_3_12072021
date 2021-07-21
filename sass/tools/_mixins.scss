@@ -1,0 +1,35 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+@mixin center {
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+}
+@mixin links-removelines {
+    text-decoration: none;
+    color: black;
+    
+}
+@mixin grad-buttons {
+    padding: 1rem 1.5rem;
+    font-family: $font-text;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1em;
+    color: $white;
+    background: linear-gradient(176deg, #FF79DA, #9356DC);
+    cursor: pointer;
+}
+//for components:
+@mixin spacing-btn  {
+    padding-right: 1rem;
+}

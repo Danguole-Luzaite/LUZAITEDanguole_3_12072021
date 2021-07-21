@@ -1,0 +1,29 @@
+.header-menu {
+    height: 4rem;
+    width: 100%;
+    display: flex;
+        &__goback-arrow {
+            display: block;
+            height: auto;
+            width: 2rem;
+            color: black;
+            align-self: center;
+                .fa-arrow-left {
+                    font-size: 1.3rem;
+                }
+        }
+        .header-logo {
+            height: 2rem;
+            width: 11rem;
+            margin-left: auto;
+            margin-right: auto;
+            align-self: center;
+                &__img {
+                    margin-left: 0;
+                    margin-right: 0;
+                    object-fit: scale-down;
+                    height: 2rem;
+                    width: 11rem;
+                }
+        }
+}
