@@ -93,7 +93,6 @@ footer .nav__link--style .nav-fas {
 }
 
 body {
-  width: 375px;
   margin: 0;
 }
 
@@ -191,7 +190,7 @@ body {
 }
 
 .function {
-  margin: 2em 1em;
+  margin: 2em 1.25em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,7 +226,7 @@ body {
       align-content: space-evenly;
   margin-bottom: 1.5em;
   background-color: #f6f6f6;
-  min-width: 334px;
+  min-width: 272px;
   border-radius: 1.5rem;
   cursor: pointer;
   padding: 1.8rem 0;
@@ -307,12 +306,12 @@ body {
 }
 
 .restaurants .container-rest .rest-card__imgbox {
-  height: 65%;
+  height: 68%;
   width: 100%;
 }
 
 .restaurants .container-rest .rest-card__img {
-  height: 65%;
+  height: 68%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -336,15 +335,23 @@ body {
 .restaurants .container-rest .rest-card__decr {
   height: 22%;
   padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .restaurants .container-rest .rest-card .btn-like {
-  height: auto;
-  width: auto;
   font-size: 1.4rem;
-  position: relative;
-  left: 268px;
-  top: -41px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding: 0.2em 1em;
 }
 
 .restaurants .container-rest .rest-card .decr-loc {
