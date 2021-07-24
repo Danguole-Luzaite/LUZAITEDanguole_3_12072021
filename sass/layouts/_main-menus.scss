@@ -1,0 +1,57 @@
+// main, container-menu
+.container-menu{
+    margin: 0;
+    padding: $space;
+    border-radius: 2.2em 2.2em 0 0;
+    background-color: $light-grey;
+    position: relative;
+    z-index: 2;
+}
+.rest-title{
+    display: flex;
+    justify-content: space-between;
+    &__heart {
+        align-self: center;
+        font-size: 1.5rem;
+        padding: 0 1rem 0 0;
+    }
+}
+//entrees
+.block-entrees {
+    @include flex-column;
+    margin-bottom: 2em;   
+}
+.menu-carte {
+    background-color: $white;
+    margin-bottom: $space;
+    border-radius: 1rem;
+    box-shadow: $shadow;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+        &__title{
+            font-size: 1.1rem;
+            margin: 0;
+        }
+        &__description{
+            font-size: 0.9em;
+            font-weight: 300;
+            margin: 0;
+            padding-top: 0.4em;
+        }
+        &__price {
+            font-size: 0.95em;
+            font-weight: 600;
+            align-self: flex-end;
+        }   
+}
+//plats
+.block-plats {
+    @include flex-column;
+    margin-bottom: 2em; 
+}
+//desserts
+.block-desserts{
+    @include flex-column;
+    margin-bottom: 2em;
+}

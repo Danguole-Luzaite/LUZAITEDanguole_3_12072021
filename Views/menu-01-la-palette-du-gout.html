@@ -17,44 +17,51 @@
             </div>
         </header>
 
-        <div class="page-menu__background-img">
-            <img src="../images/resized/1jay-wennington.jpg" alt="image pour menu la-palette-du-gout"/>
+        <div class="background-img">
+            <img class="menu-img" src="../images/resized/1jay-wennington.jpg" alt="image pour menu la-palette-du-gout"/>
         </div>
 
         <main>
             <div class="container-menu"> <!-- flex -->
-                <div class="container-menu__rest-title">
-                    <h1>La palette du goût</h1>
-                    <div class="container-menu__heart">
+                <div class="rest-title">
+                    <h1 class="rest-title__name">La palette du goût</h1>
+                    <div class="rest-title__heart">
                         <i class="far fa-heart"></i>
                     </div>
                 </div>
 
                 <section class="entrees"> <!-- flex -->
-                    <h2>Entrées</h2>
+                    <h2 class="menu_sec-name">ENTRÈES</h2>
+                    <p class="underline"></p>
                     <div class="block-entrees"> 
-                        <div class="entrees-carte"> <!-- flex -->
-                            <h3 class="entrees-carte__title">Fricassée d'escargot</h3>
-                            <p class="entrees-carte__description">Au piment d'Espelette</p>
-                            <div class="entrees-carte__price">
+                        <div class="menu-carte"> <!-- flex -->
+                            <div class="menu-carte__text">
+                                <h3 class="menu-carte__title">Fricassée d'escargot</h3>
+                                <p class="menu-carte__description">Au piment d'Espelette</p>
+                            </div>
+                            <div class="menu-carte__price">
                                 <div class="price__animation"> <!-- ajouter code pour animations -->
                                     25€
                                 </div>
                             </div>
                         </div>                      
-                        <div class="entrees-carte"> <!-- flex -->
-                            <h3 class="entrees-carte__title">Foie gras de canard mi-cuit</h3>
-                            <p class="entrees-carte__description">Et ses copeaux de truffe noire</p>
-                            <div class="entrees-carte__price">
+                        <div class="menu-carte"> <!-- flex -->
+                            <div class="menu-carte__text">
+                                <h3 class="menu-carte__title">Foie gras de canard mi-cuit</h3>
+                                <p class="menu-carte__description">Et ses copeaux de truffe noire</p>
+                            </div>
+                            <div class="menu-carte__price">
                                 <div class="price__animation"> <!-- ajouter code pour animations -->
                                     35€
                                 </div>
                             </div>
                         </div>
-                        <div class="entrees-carte"> <!-- flex -->
-                            <h3 class="entrees-carte__title">Oeuf au plat</h3>
-                            <p class="entrees-carte__description">Assaisonné à la truffe sur lit de caviar</p>
-                            <div class="entrees-carte__price">
+                        <div class="menu-carte"> <!-- flex -->
+                            <div class="menu-carte__text">
+                                <h3 class="menu-carte__title">Oeuf au plat</h3>
+                                <p class="menu-carte__description">Assaisonné à la truffe sur lit de caviar</p>
+                            </div>
+                            <div class="menu-carte__price">
                                 <div class="price__animation"> <!-- ajouter code pour animations -->
                                     20€
                                 </div>
@@ -64,30 +71,37 @@
                 </section>
 
                 <section class="plats">
-                    <h2>Plats</h2>
+                    <h2 class="menu_sec-name">PLATS</h2>
+                    <p class="underline"></p>
                     <div class="block-plats"> <!-- flex -->
-                        <div class="plats-carte"> <!-- flex -->
-                            <h3 class="plats-carte__title">Filet de boeuf aux herbes</h3>
-                            <p class="plats-carte__description">Accompagné de sa ribambelle de légumes</p>
-                            <div class="plats-carte__price">
+                        <div class="menu-carte"> <!-- flex -->
+                            <div class="menu-carte__text">
+                                <h3 class="menu-carte__title">Filet de boeuf aux herbes</h3>
+                                <p class="menu-carte__description">Accompagné de sa ribambelle de légumes</p>
+                            </div>
+                            <div class="menu-carte__price">
                                 <div class="price__animation"> <!-- ajouter code pour animations -->
                                     40€
                                 </div>
                             </div>
                         </div>                      
-                        <div class="plats-carte"> <!-- flex -->
-                            <h3 class="plats-carte__title">Parmentier de queue de boeuf</h3>
-                            <p class="plats-carte__description">À la truffe noire sur sa purée de panais</p>
-                            <div class="plats-carte__price">
+                        <div class="menu-carte"> <!-- flex -->
+                            <div class="menu-carte__text">
+                                <h3 class="menu-carte__title">Parmentier de queue de boeuf</h3>
+                                <p class="menu-carte__description">À la truffe noire sur sa purée de panais</p>
+                            </div>
+                            <div class="menu-carte__price">
                                 <div class="price__animation"> <!-- ajouter code pour animations -->
                                     35€
                                 </div>
                             </div>
                         </div>
-                        <div class="plats-carte"> <!-- flex -->
-                            <h3 class="plats-carte__title">Filet de turbot</h3>
-                            <p class="plats-carte__description">Aux agrumes</p>
-                            <div class="plats-carte__price">
+                        <div class="menu-carte"> <!-- flex -->
+                            <div class="menu-carte__text">
+                                <h3 class="menu-carte__title">Filet de turbot</h3>
+                                <p class="menu-carte__description">Aux agrumes</p>
+                            </div>
+                            <div class="menu-carte__price">
                                 <div class="price__animation"> <!-- ajouter code pour animations -->
                                     44€
                                 </div>
@@ -97,30 +111,37 @@
                 </section> 
 
                 <section class="desserts">
-                    <h2>Desserts</h2>
+                    <h2 class="menu_sec-name">DESSERTS</h2>
+                    <p class="underline"></p>
                     <div class="block-desserts"> <!-- flex -->
-                        <div class="desserts-carte"> <!-- flex -->
-                            <h3 class="desserts-carte__title">Paris-Brest</h3>
-                            <p class="desserts-carte__description">Revisité</p>
-                            <div class="desserts-carte__price">
+                        <div class="menu-carte"> <!-- flex -->
+                            <div class="menu-carte__text">
+                                <h3 class="menu-carte__title">Paris-Brest</h3>
+                                <p class="menu-carte__description">Revisité</p>
+                            </div>
+                            <div class="menu-carte__price">
                                 <div class="price__animation"> <!-- ajouter code pour animations -->
                                     18€
                                 </div>
                             </div>
                         </div>                      
-                        <div class="desserts-carte"> <!-- flex -->
-                            <h3 class="desserts-carte__title">Macaron au chocolat d'exception</h3>
-                            <p class="desserts-carte__description">Et glace à la vanille de Madagascar</p>
-                            <div class="desserts-carte__price">
+                        <div class="menu-carte"> <!-- flex -->
+                            <div class="menu-carte__text">
+                                <h3 class="menu-carte__title">Macaron au chocolat d'exception</h3>
+                                <p class="menu-carte__description">Et glace à la vanille de Madagascar</p>
+                            </div>
+                            <div class="menu-carte__price">
                                 <div class="price__animation"> <!-- ajouter code pour animations -->
                                     22€
                                 </div>
                             </div>
                         </div>
-                        <div class="desserts-carte"> <!-- flex -->
-                            <h3 class="desserts-carte__title">Mousse au chocolat</h3>
-                            <p class="desserts-carte__description">Au piment d'Espelette et à la truffe noire</p>
-                            <div class="desserts-carte__price">
+                        <div class="menu-carte"> <!-- flex -->
+                            <div class="menu-carte__text">
+                                <h3 class="menu-carte__title">Mousse au chocolat</h3>
+                                <p class="menu-carte__description">Au piment d'Espelette et à la truffe noire</p>
+                            </div>
+                            <div class="menu-carte__price">
                                 <div class="price__animation"> <!-- ajouter code pour animations -->
                                     23€
                                 </div>
@@ -129,7 +150,7 @@
                     </div> 
                 </section> 
 
-                <div class=" btn container-menu__btn">
+                <div class="container-menu__btn">
                     <a href="#"><button class="menu__btn--gradient">Commander</button></a>
                 </div>                   
             </div>

@@ -9,3 +9,16 @@ Texte: Roboto */
 .footer-title, h1 {
     font-family: $font-titles;
 }
+.rest-title__name{
+    font-size: 1.75rem;
+}
+.menu_sec-name{
+    font-weight: 400;
+    font-size: 1.05rem;
+    margin-bottom: 0;
+}
+.underline{
+    border-top: solid $colour-tertiaire;
+    width: 40px;
+    margin: 0.5em 0 1em 0;
+}

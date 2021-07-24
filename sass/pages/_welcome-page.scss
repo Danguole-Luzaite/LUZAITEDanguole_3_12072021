@@ -51,12 +51,14 @@ body{
         &__btn{
             margin: 1em 0;
             box-shadow: 1px 6px 16px -5px #aaaaaa;
+            padding: 1rem 1.5rem;
             @include grad-buttons;
+
         }
 }
 // Fonctionnement
 .function{
-    margin: 2em 1.25em;
+    padding: 2em 1.25em;
     display: flex;
     flex-direction: column;
         .container-function {

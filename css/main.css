@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 /* Polices:
 Logo et titres: Shrikhand
 Texte: Roboto */
@@ -9,6 +10,45 @@ Texte: Roboto */
 
 .footer-title, h1 {
   font-family: "Shrikhand";
+}
+
+.rest-title__name {
+  font-size: 1.75rem;
+}
+
+.menu_sec-name {
+  font-weight: 400;
+  font-size: 1.05rem;
+  margin-bottom: 0;
+}
+
+.underline {
+  border-top: solid #99E2D0;
+  width: 40px;
+  margin: 0.5em 0 1em 0;
+}
+
+.container-menu__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 4em;
+}
+
+.container-menu__btn .menu__btn--gradient {
+  -webkit-box-shadow: 1px 6px 16px -5px #aaaaaa;
+          box-shadow: 1px 6px 16px -5px #aaaaaa;
+  padding: 1rem 3.5rem;
+  font-family: "Roboto", sans-serif;
+  border-radius: 2rem;
+  border: none;
+  font-size: 1em;
+  color: #fff;
+  background: linear-gradient(176deg, #FF79DA, #9356DC);
+  cursor: pointer;
 }
 
 footer {
@@ -43,7 +83,7 @@ footer .nav__link {
 footer .nav__link--style {
   color: #fff;
   text-decoration: none;
-  font-weight: lighter;
+  font-weight: 400;
 }
 
 footer .nav__link--style .nav-fas {
@@ -62,11 +102,11 @@ footer .nav__link--style .nav-fas {
 .header-menu__goback-arrow {
   display: block;
   height: auto;
-  width: 2rem;
   color: black;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  padding: 1.5rem;
 }
 
 .header-menu__goback-arrow .fa-arrow-left {
@@ -90,6 +130,126 @@ footer .nav__link--style .nav-fas {
      object-fit: scale-down;
   height: 2rem;
   width: 11rem;
+}
+
+.page-menu {
+  margin: 0;
+  width: 375px;
+}
+
+.background-img {
+  height: 215px;
+  width: auto;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.background-img .menu-img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.container-menu {
+  margin: 0;
+  padding: 1em;
+  border-radius: 2.2em 2.2em 0 0;
+  background-color: #f6f6f6;
+  position: relative;
+  z-index: 2;
+}
+
+.rest-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rest-title__heart {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.5rem;
+  padding: 0 1rem 0 0;
+}
+
+.block-entrees {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 2em;
+}
+
+.menu-carte {
+  background-color: #fff;
+  margin-bottom: 1em;
+  border-radius: 1rem;
+  -webkit-box-shadow: 1px 6px 16px -5px #cfcfcf;
+          box-shadow: 1px 6px 16px -5px #cfcfcf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+.menu-carte__title {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.menu-carte__description {
+  font-size: 0.9em;
+  font-weight: 300;
+  margin: 0;
+  padding-top: 0.4em;
+}
+
+.menu-carte__price {
+  font-size: 0.95em;
+  font-weight: 600;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.block-plats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 2em;
+}
+
+.block-desserts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 2em;
 }
 
 body {
@@ -190,7 +350,7 @@ body {
 }
 
 .function {
-  margin: 2em 1.25em;
+  padding: 2em 1.25em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
