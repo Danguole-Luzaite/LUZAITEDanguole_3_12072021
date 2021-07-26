@@ -51,6 +51,20 @@ Texte: Roboto */
   cursor: pointer;
 }
 
+.container-menu__btn .menu__btn--gradient:active {
+  background: linear-gradient(176deg, #ff8de0, #9e67e0);
+  -webkit-box-shadow: 1px 6px 16px -5px #444444;
+          box-shadow: 1px 6px 16px -5px #444444;
+}
+
+@media (min-width: 769px) {
+  .container-menu__btn .menu__btn--gradient:hover {
+    background: linear-gradient(176deg, #ff8de0, #9e67e0);
+    -webkit-box-shadow: 1px 6px 16px -5px #444444;
+            box-shadow: 1px 6px 16px -5px #444444;
+  }
+}
+
 footer {
   background-color: #353535;
   color: #fff;
@@ -65,7 +79,7 @@ footer {
 
 footer .footer-title {
   margin: 0;
-  padding: 1rem;
+  padding: 1.25rem;
   font-size: 1.2em;
 }
 
@@ -73,7 +87,7 @@ footer .nav {
   margin-top: 0;
   list-style-type: none;
   margin-bottom: 32px;
-  padding-left: 16px;
+  padding-left: 22px;
 }
 
 footer .nav__link {
@@ -329,8 +343,8 @@ body {
 }
 
 .presentation__desc {
-  font-weight: lighter;
-  font-size: 1.09em;
+  font-weight: 300;
+  font-size: 1.1em;
   color: #353535;
   text-align: center;
 }
@@ -347,6 +361,20 @@ body {
   color: #fff;
   background: linear-gradient(176deg, #FF79DA, #9356DC);
   cursor: pointer;
+}
+
+.presentation__btn:active {
+  background: linear-gradient(176deg, #ff8de0, #9e67e0);
+  -webkit-box-shadow: 1px 6px 16px -5px #444444;
+          box-shadow: 1px 6px 16px -5px #444444;
+}
+
+@media (min-width: 769px) {
+  .presentation__btn:hover {
+    background: linear-gradient(176deg, #ff8de0, #9e67e0);
+    -webkit-box-shadow: 1px 6px 16px -5px #444444;
+            box-shadow: 1px 6px 16px -5px #444444;
+  }
 }
 
 .function {
@@ -394,6 +422,23 @@ body {
           box-shadow: 1px 6px 16px -5px #cfcfcf;
 }
 
+.function .container-function__btn:active {
+  background-color: #f2eafb;
+}
+
+.function .container-function__btn:active .btn__fas {
+  color: #9356DC;
+}
+
+@media (min-width: 769px) {
+  .function .container-function__btn:hover {
+    background-color: #f2eafb;
+  }
+  .function .container-function__btn:hover .btn__fas {
+    color: #9356DC;
+  }
+}
+
 .function .container-function__btn .nr {
   border: 1px;
   border-radius: 50%;
@@ -414,10 +459,6 @@ body {
   margin-left: 2em;
   margin-right: 1.5em;
   font-size: 1.2em;
-}
-
-.function .container-function__btn .btn__fas--purple {
-  color: #9356DC;
 }
 
 .function .container-function__btn .btn-dscr {

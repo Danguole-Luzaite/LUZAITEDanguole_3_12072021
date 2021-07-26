@@ -43,8 +43,8 @@ body{
             margin: 0;
         }
         &__desc {
-            font-weight: lighter;
-            font-size: 1.09em;
+            font-weight: 300;
+            font-size: 1.1em;
             color: #353535;
             text-align: center;
         }
@@ -53,7 +53,16 @@ body{
             box-shadow: 1px 6px 16px -5px #aaaaaa;
             padding: 1rem 1.5rem;
             @include grad-buttons;
-
+            &:active {
+                background: linear-gradient(176deg, lighten(#FF79DA, 4), lighten(#9356DC, 4));
+                box-shadow: 1px 6px 16px -5px darken(#aaaaaa, 40);
+            }
+            @media (min-width: 769px) {
+                &:hover {
+                    background: linear-gradient(176deg, lighten(#FF79DA, 4), lighten(#9356DC, 4));
+                    box-shadow: 1px 6px 16px -5px darken(#aaaaaa, 40);
+                }
+            }
         }
 }
 // Fonctionnement
@@ -77,6 +86,20 @@ body{
                     cursor: pointer;
                     padding: 1.8rem 0;
                     box-shadow: $shadow;
+                    &:active {
+                        background-color: $prim-lighten;
+                    }
+                    &:active .btn__fas{
+                        color: $colour-primaire;
+                    }
+                    @media (min-width: 769px) {
+                        &:hover {
+                            background-color: $prim-lighten;
+                        }
+                        &:hover .btn__fas{
+                            color: $colour-primaire;
+                        }
+                    }
                         .nr {
                             border: 1px;
                             border-radius: 50%;
@@ -94,9 +117,6 @@ body{
                             margin-left: 2em;
                             margin-right: 1.5em;
                             font-size: 1.2em;
-                        }
-                        .btn__fas--purple{
-                            color: $colour-primaire; 
                         }                       
                         .btn-dscr{
                             align-self: center;

@@ -5,5 +5,15 @@
     padding-bottom: 4em;
     .menu__btn--gradient{
         @include btn;
+        &:active {
+            background: linear-gradient(176deg, lighten(#FF79DA, 4), lighten(#9356DC, 4));
+            box-shadow: 1px 6px 16px -5px darken(#aaaaaa, 40);
+        }
+        @media (min-width: 769px) {
+            &:hover {
+                background: linear-gradient(176deg, lighten(#FF79DA, 4), lighten(#9356DC, 4));
+                box-shadow: 1px 6px 16px -5px darken(#aaaaaa, 40);
+            }
+        }
     }
 }

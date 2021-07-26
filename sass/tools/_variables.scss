@@ -17,3 +17,5 @@ $font-text: 'Roboto', sans-serif;
 
 $space: 1em;
 $shadow: 1px 6px 16px -5px $shadow-darker;
+$gradient: linear-gradient(176deg, #FF79DA, #9356DC);
+$prim-lighten: lighten($colour-primaire, 35)

@@ -30,7 +30,7 @@
     border: none;
     font-size: 1em;
     color: $white;
-    background: linear-gradient(176deg, #FF79DA, #9356DC);
+    background: $gradient;
     cursor: pointer;
 }
 @mixin pseudo-elements {
