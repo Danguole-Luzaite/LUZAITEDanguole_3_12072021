@@ -13,8 +13,16 @@ footer{
             list-style-type: none;
             margin-bottom: 32px;
             padding-left: 22px;
+            @media (min-width: 769px){
+                display: flex;
+                flex-direction: row;
+            }
                 &__link{
                     margin-bottom: 0.5em;
+                    @media (min-width: 769px){
+                        flex: 1 24%;
+                        margin-right: 2%;
+                    }
                 }    
                     &__link--style{
                         color: $white;

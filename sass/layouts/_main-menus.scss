@@ -6,6 +6,9 @@
     background-color: $light-grey;
     position: relative;
     z-index: 2;
+    @media (min-width: 769px){
+        padding: 2em;
+    }
 }
 .rest-title{
     display: flex;
@@ -16,7 +19,20 @@
         padding: 0 1rem 0 0;
     }
 }
+.menu-layout {
+    @media (min-width: 769px){
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
 //entrees
+section.entrees {
+    @media (min-width: 769px){
+        @include menu_section-flex;
+        margin-right: 1%;
+    }
+}
 .block-entrees {
     @include flex-column;
     margin-bottom: 2em;   
@@ -43,14 +59,28 @@
             font-size: 0.95em;
             font-weight: 600;
             align-self: flex-end;
+        }
+        @media (min-width: 769px){
+            min-width: 295px;
         }   
 }
 //plats
+section.plats {
+    @media (min-width: 769px){
+        @include menu_section-flex;
+        margin-right: 1%;
+    }
+}
 .block-plats {
     @include flex-column;
     margin-bottom: 2em; 
 }
 //desserts
+section.desserts {
+    @media (min-width: 769px){
+        @include menu_section-flex;
+    }
+}
 .block-desserts{
     @include flex-column;
     margin-bottom: 2em;

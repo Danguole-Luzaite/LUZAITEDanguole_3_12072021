@@ -74,6 +74,11 @@ body{
             display: flex;
             flex-direction: column;
             margin: $space;
+            @media (min-width: 769px) {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between; 
+            }
                 &__btn{
                     display: flex;
                     flex-direction: row;
@@ -93,6 +98,9 @@ body{
                         color: $colour-primaire;
                     }
                     @media (min-width: 769px) {
+                        min-width: 300px;
+                        max-width: 30%;
+                        flex-grow: 1;
                         &:hover {
                             background-color: $prim-lighten;
                         }
@@ -109,7 +117,12 @@ body{
                             font-size: 0.9rem;
                             position: absolute;
                             left: 22px;
-                            margin: 0;                          
+                            margin: 0;
+                            @media (min-width: 769px){
+                                position: unset;
+                                left: 0;
+                                margin-left: -10px;
+                            }                              
                         }
                         .btn__fas{
                             align-self: center;
@@ -132,15 +145,29 @@ body{
     @include flex-column;
         .container-rest{
             @include flex-column;
+            justify-content: space-around;
+            align-items: center;
+            @media (min-width: 769px){
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
                 .rest-card{
                     display: block;
                     width: 100%;
+                    max-width: 385px;
                     height: 253px;
                     margin-bottom: 1.15rem;
                     background-color: white;
                     border-radius: 1rem;
                     box-shadow: $shadow;
                     @include links-removelines;
+                    @media (min-width: 769px){
+                        flex: 0 47%;
+                        margin-bottom: 3%;
+                        max-width: 453px;
+                        min-width: 45%;
+                    }
                     &__imgbox{
                         height: 68%;
                         width: 100%;
@@ -190,7 +217,6 @@ body{
                     text-align: center;
                     position: relative;
                     bottom: 152px;
-                    left: 231px;
                 }
         }
 }

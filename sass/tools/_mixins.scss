@@ -41,6 +41,10 @@
     bottom: 0;
     left: 0;
 }
+//menu sections
+@mixin menu_section-flex {
+    flex: 1 32%;
+}
 
 //for components:
 @mixin spacing-btn  {
