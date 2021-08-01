@@ -3,25 +3,31 @@ footer{
     color: $white;
     display: flex;
     flex-direction: column;
+    @media (min-width: $media-mobdeskt){
+        padding-bottom: 20px;
+    }
         .footer-title{
             margin: 0;
             padding: 1.25rem;
             font-size: 1.2em;
+            @media (min-width: $media-mobdeskt){
+                text-align: center;
+            }
         }
         .nav{
             margin-top: 0;
             list-style-type: none;
             margin-bottom: 32px;
             padding-left: 22px;
-            @media (min-width: 769px){
-                display: flex;
-                flex-direction: row;
+            @media (min-width: $media-mobdeskt){
+                display: table;
+                margin: auto;
             }
                 &__link{
                     margin-bottom: 0.5em;
-                    @media (min-width: 769px){
-                        flex: 1 24%;
-                        margin-right: 2%;
+                    @media (min-width: $media-mobdeskt){
+                        float: left;
+                        padding: 5px 10px;
                     }
                 }    
                     &__link--style{

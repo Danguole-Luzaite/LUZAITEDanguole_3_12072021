@@ -6,8 +6,8 @@
     background-color: $light-grey;
     position: relative;
     z-index: 2;
-    @media (min-width: 769px){
-        padding: 2em;
+    @media (min-width: $media-mobdeskt){
+        padding: 3em;
     }
 }
 .rest-title{
@@ -15,12 +15,34 @@
     justify-content: space-between;
     &__heart {
         align-self: center;
-        font-size: 1.5rem;
-        padding: 0 1rem 0 0;
+        font-size: 1.6rem;
+        cursor: pointer;
+        width: 25px;
+        height: 26px;
+        padding-right: 1rem;
+        .heart-anim{
+            height: 25px;
+            width: 26px;
+        }
+        .heart-anim2{
+            position: relative;
+            top: -30px;
+            color: transparent;
+            height: 25px;
+            width: 26px;
+            @media (min-width: $media-mobdeskt) {
+                &:hover{
+                    @include hearts-anim-color;   
+                } 
+            }
+            &:active{
+                @include hearts-anim-color;
+            }
+        }
     }
 }
 .menu-layout {
-    @media (min-width: 769px){
+    @media (min-width: $media-mobdeskt){
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -28,7 +50,9 @@
 }
 //entrees
 section.entrees {
-    @media (min-width: 769px){
+    @include sections-appear-anim;
+    animation-delay: 0.3s;
+    @media (min-width: $media-mobdeskt){
         @include menu_section-flex;
         margin-right: 1%;
     }
@@ -44,29 +68,108 @@ section.entrees {
     box-shadow: $shadow;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    @media (min-width: $media-mobdeskt){
+        &:hover > .check-box{
+            transform: translateX(0px); 
+        }
+    }
+    &:active > .check-box{
+        transform: translateX(0px); 
+    }
+    @media (min-width: $media-mobdeskt){
+        &:hover  &__price{
+            transform: translateX(-57px); 
+        }
+    }
+    &:active  &__price{
+        transform: translateX(-57px); 
+    }   
+        &__text{
+            padding: 1em 0 1em 1em;
+            width: 100%;
+            @media (max-width: 320px) {
+                max-width: 195px;
+            }
+            @media (min-width: 320px) and (max-width: 375px) {
+                max-width: 253px;
+                min-width: 195px;
+            }
+            
+        }
         &__title{
             font-size: 1.1rem;
             margin: 0;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        &__decript-price{
+            display: flex;
+            justify-content: space-between;
         }
         &__description{
             font-size: 0.9em;
             font-weight: 300;
             margin: 0;
             padding-top: 0.4em;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }
         &__price {
             font-size: 0.95em;
             font-weight: 600;
             align-self: flex-end;
+            margin: 0;
+            padding: 0 1em 0 1em;
+            position: relative;
+            left: 57px;
+            transition: transform 600ms ease-in-out 5ms;
+            transform: translateX(0px);    
         }
-        @media (min-width: 769px){
+        @media (min-width: $media-mobdeskt){
             min-width: 295px;
-        }   
+        }
+        .check-box {
+            width: 74px;
+            height: 75px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $colour-tertiaire;
+            transition: transform 600ms ease-in-out 5ms;
+            transform: translateX(74px);
+            .fa-check-anim{
+                font-size: 1rem;
+                color: #99e2d0;
+                background-color: white;
+                border: 1px;
+                border-radius: 50%;
+                padding: 0.35rem;
+                position: relative;
+                transition: transform 650ms linear 20ms;
+                transform: rotate(360deg);  
+            }
+        }
+        @media (min-width: $media-mobdeskt){
+            &:hover .fa-check-anim {
+                transform: rotate(0deg); 
+            } 
+        }
+        &:active .fa-check-anim {
+            transform: rotate(0deg); 
+        }             
+                         
 }
+
 //plats
 section.plats {
-    @media (min-width: 769px){
+    @include sections-appear-anim;
+    animation-delay: 0.6s;
+    @media (min-width: $media-mobdeskt){
         @include menu_section-flex;
         margin-right: 1%;
     }
@@ -77,11 +180,40 @@ section.plats {
 }
 //desserts
 section.desserts {
-    @media (min-width: 769px){
+    @include sections-appear-anim;
+    animation-delay: 1s;
+    @media (min-width: $media-mobdeskt){
         @include menu_section-flex;
     }
 }
 .block-desserts{
     @include flex-column;
     margin-bottom: 2em;
+}
+//section-loading animation keyframes
+@keyframes section-loading {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;  
+    }
+}
+//hearts keyframes
+@keyframes like-animation {
+    0% {
+        transform: scaleY(0);
+        opacity: 0.1;
+    }
+    50% {
+        transform: scaleY(0.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
 }
