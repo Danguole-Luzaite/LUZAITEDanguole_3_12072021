@@ -1,6 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@-webkit-keyframes like-animation {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 0.1;
+  }
+  50% {
+    -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
+}
+@keyframes like-animation {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 0.1;
+  }
+  50% {
+    -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
 /* Polices:
 Logo et titres: Shrikhand
 Texte: Roboto */
@@ -554,24 +589,6 @@ section.desserts {
   }
 }
 
-@-webkit-keyframes like-animation {
-  0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    opacity: 0.1;
-  }
-  50% {
-    -webkit-transform: scaleY(0.5);
-            transform: scaleY(0.5);
-    opacity: 0.5;
-  }
-  100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    opacity: 1;
-  }
-}
-
 @keyframes like-animation {
   0% {
     -webkit-transform: scaleY(0);
@@ -992,6 +1009,22 @@ body {
           box-shadow: 1px 6px 16px -5px #cfcfcf;
   text-decoration: none;
   color: black;
+  /* 
+                        @keyframes like-animation {
+                            0% {
+                                transform: scaleY(0);
+                                opacity: 0.1;
+                            }
+                            50% {
+                                transform: scaleY(0.5);
+                                opacity: 0.5;
+                            }
+                            100% {
+                                transform: scaleY(1);
+                                opacity: 1;
+                            }
+                        }
+                        */
 }
 
 @media (min-width: 768px) {
@@ -1087,24 +1120,6 @@ body {
   right: 30px;
   width: 26px;
   height: 25px;
-}
-
-@keyframes like-animation {
-  0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    opacity: 0.1;
-  }
-  50% {
-    -webkit-transform: scaleY(0.5);
-            transform: scaleY(0.5);
-    opacity: 0.5;
-  }
-  100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    opacity: 1;
-  }
 }
 
 .restaurants .container-rest .rest-card .fa-like-anim {
